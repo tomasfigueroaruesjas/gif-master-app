@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import banner from "../assets/banner.gif";
 import { getGifTrending } from '../helpers/fetchApi';
 
+
 const HomeScreen = () => {
   const [gifs, setGifs] = useState([]);
   const [loading, setLoading] = useState(true);
