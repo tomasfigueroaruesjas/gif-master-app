@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { ErrorScreen, HomeScreen, LoginScreen, SignUp, CategoryScreen } from '../pages';
+import { ErrorScreen, HomeScreen, LoginScreen, SignUp, CategoryScreen, SearchScreen } from '../pages';
 
 
 const RoutesApp = () => {
@@ -9,6 +9,7 @@ const RoutesApp = () => {
             <Route path='/login' element={<LoginScreen /> } />
             <Route path='/signup' element={<SignUp /> } />
             <Route path='/category/:id' element={<CategoryScreen /> } />
+            <Route path='/search/:termino' element={<SearchScreen /> } />
             <Route path='*' element={<ErrorScreen /> } />
         </Routes>
     )
